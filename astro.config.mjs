@@ -4,11 +4,16 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://zane-lang.org"
+	site: "https://zane-lang.org",
 	integrations: [
 		starlight({
-			title: 'Docs',
-			favicon: '/favicon.svg',
+			title: 'Zane Docs',
+			description: 'The Zane programming language',
+			favicon: '/favicons/favicon.ico',
+			logo: {
+				src: './src/assets/zane-black.svg',
+				alt: 'Black version of Zane logo',
+			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/TheLazyCat00' }],
 			sidebar: [
 				{
