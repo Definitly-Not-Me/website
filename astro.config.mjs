@@ -4,6 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: "https://zane-lang.org"
 	integrations: [
 		starlight({
 			title: 'Docs',
